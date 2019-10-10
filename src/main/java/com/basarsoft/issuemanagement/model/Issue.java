@@ -1,6 +1,6 @@
 package com.basarsoft.issuemanagement.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -8,6 +8,10 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "issue")
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@ToString
 public class Issue extends BaseEntity {
 
     @GeneratedValue(strategy = GenerationType.AUTO)
