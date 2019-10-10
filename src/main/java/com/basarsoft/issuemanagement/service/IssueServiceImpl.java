@@ -24,11 +24,8 @@ public class IssueServiceImpl implements IssueService {
 
     @Override
     public IssueDto save(IssueDto issue) {
-        if(issue.getDate() == null){
-            throw new IllegalArgumentException("not null");
-        }
         Issue issueDb = modelMapper.map(issue,Issue.class);
-        issueDb = issueRepository.save(issueDb);
+        issueRepository.save(issueDb);
         return modelMapper.map(issueDb,IssueDto.class);
     }
 
@@ -49,5 +46,15 @@ public class IssueServiceImpl implements IssueService {
     @Override
     public Boolean delete(IssueDto issueDto) {
         return null;
+    }
+
+    @Override
+    public IssueDto update(Long id, IssueDto project) {
+        return null;
+    }
+
+    public Boolean delete(Long id) {
+        issueRepository.deleteById(id);
+        return true;
     }
 }

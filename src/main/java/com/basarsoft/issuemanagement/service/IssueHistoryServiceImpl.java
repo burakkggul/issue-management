@@ -17,9 +17,6 @@ public class IssueHistoryServiceImpl implements IssueHistoryService{
 
     @Override
     public IssueHistory save(IssueHistory issueHistory) {
-        if(issueHistory.getDate() == null){
-            throw new IllegalArgumentException("not null");
-        }
         return issueHistoryRepository.save(issueHistory);
     }
 
