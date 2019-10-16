@@ -1,0 +1,27 @@
+[
+  {
+    "_class": "com.basarsoft.issuemanagement.model.Project",
+    "projectCode" : "IM",
+    "projectName": "Issue Management Project"
+  },
+  {
+    "_class": "com.basarsoft.issuemanagement.model.Project",
+    "projectCode" : "ERP-S",
+    "projectName": "ERP Project for Sales"
+  },
+  {
+    "_class": "com.basarsoft.issuemanagement.model.Project",
+    "projectCode" : "CRM-S",
+    "projectName": "CRM Project for Sales"
+  },
+  {
+    "_class": "com.basarsoft.issuemanagement.model.Project",
+    "projectCode" : "CRM-B",
+    "projectName": "CRM Project for Bussiness"
+  },
+  {
+    "_class": "com.basarsoft.issuemanagement.model.Project",
+    "projectCode" : "ERP-B",
+    "projectName": "ERP Project for Bussiness"
+  }
+]
