@@ -31,5 +31,4 @@ public class IssueDto {
     private ProjectDto project;
 
     Scanner scanner = new Scanner(System.in);
-
-}
+//Test
